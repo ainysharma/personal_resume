@@ -1,8 +1,3 @@
-/* ============================================
-   Ainy Sharma — Personal Portfolio
-   Glassmorphic Editorial Design
-   ============================================ */
-
 /* --- Design Tokens --- */
 :root {
   --paper: #F5F0E9;
@@ -1067,30 +1062,36 @@ h1, h2, h3, h4 {
 @media (max-width: 600px) {
   .site-header {
     top: 8px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 14px;
     width: calc(100% - 1rem);
-  }
-
-  .nav-list {
-    gap: 0.45rem;
-  }
-
-  .nav-list a {
-    font-size: 0.75rem;
-  }
-
-  .nav-cta {
-    padding: 0.3em 0.7em;
-    font-size: 0.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .header-inner {
-    gap: 0.5rem;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    min-width: max-content;
   }
 
   .wordmark {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-list {
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .nav-list a {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .nav-cta {
+    padding: 0.25em 0.6em;
+    font-size: 0.7rem;
   }
 
   .hero h1 {
